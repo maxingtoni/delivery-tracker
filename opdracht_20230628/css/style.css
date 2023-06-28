@@ -1,0 +1,106 @@
+:root {
+    --bg-color: #9ba4ff;
+
+    --text-color: #ffffff;
+    --text-color-hover: #444466;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration: none;
+    list-style: none;
+}
+
+.hover:hover {
+    color: var(--text-color-hover);
+}
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+    font-family: sans-serif;
+    background-image: url(../media/backgroundImage.jpeg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    align-items: center;
+    background-color: black;
+    transform: rotate(90deg);
+    width: 100vh;
+    margin-top: 47.5vh;
+    float: left;
+    position: absolute;
+    right: -23.5vw;
+}
+
+header div#logo {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+header nav ul li {
+    margin: 0 auto;
+    font-weight: 600;
+}
+
+header div#options {
+    display: flex;
+    flex-direction: row;
+}
+header div#options > * {
+    margin: 0 auto;
+    font-weight: 600;
+}
+
+main {
+    margin-left: 2vw;
+}
+.gigacat {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    float: left;
+    top: 20vh;
+    left: 0vh;
+}
+form {
+    color: black;
+}
+#locations {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100vw;
+}
+
+.location {
+    padding: 1rem;
+    border: .25rem solid var(--bg-header);
+    border-radius: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.location #gmap_canvas {
+    height: 300px;
+    width: 300px;
+}
